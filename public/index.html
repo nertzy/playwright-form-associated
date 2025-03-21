@@ -1,0 +1,25 @@
+<script>
+class MyCustomInput extends HTMLElement {
+    static formAssociated = true;
+
+    constructor() {
+        super();
+        this.attachInternals()
+        this.internalValue = ""
+    }
+
+    get value() {
+        return "myValue"
+    }
+
+    set value(value) {
+        // NO-OP
+    }
+}
+
+customElements.define('my-custom-input', MyCustomInput);
+</script>
+
+<form>
+    <my-custom-input role="textbox"></my-custom-input>
+</form>
