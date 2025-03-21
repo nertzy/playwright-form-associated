@@ -9,7 +9,7 @@
     "@types/node": "^22.13.11"
   },
   "scripts": {
-    "server": "node server.js",
-    "test": "npm run server && npx playwright test"
+    "start": "node server.js",
+    "test": "npx playwright test"
   }
 }
